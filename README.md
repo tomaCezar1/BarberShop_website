@@ -1,1 +1,1 @@
-Deployement link (Netlify) : https://wonderful-rosalind-8b96f0.netlify.app
+Deployement link (Netlify) : barbershop-website-cezar.netlify.app
