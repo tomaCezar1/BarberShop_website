@@ -1,1 +1,1 @@
-Deployement link (Netlify) : barbershop-website-cezar.netlify.app
+Deployement link (Netlify) : https://barbershop-website-cezar.netlify.app/
