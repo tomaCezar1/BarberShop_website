@@ -1,0 +1,176 @@
+.contact-us-image {
+    width: 100vw;
+    height: 85vh;
+}
+
+.contact-us-image img {
+    object-fit: cover;
+    width: 100vw;
+    height: 85vh;
+}
+
+.contact-us-flex {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background: #000000;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+}
+
+/* Form */
+.form-container {
+    width: 60%;
+    height: 550px;
+    margin-left: 15rem;
+    margin-top: 6rem;
+}
+
+#form input:not(#message) {
+    width: 550px;
+    height: 2.6rem;
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+    font-size: 1rem;
+    font-style: italic;
+    display: block;
+    padding: 0.3rem;
+    border: rgba(255, 255, 255, 0.1) 2px solid;
+    margin: 0.7rem 0;
+    border-radius: 2%;
+}
+
+input:focus, #message:focus {
+    color: #f1f1f1
+}
+
+.active-input {
+    border: #ff9400 2px solid !important;
+}
+
+#form label {
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 0.6rem 0;
+}
+
+#submit {
+    cursor: pointer;
+    color: #f1f1f1;
+    display: inline-block;
+    background: var(--orange-underline-color);
+    padding: 14px 0;
+    margin-top: 8px;
+    margin-left: 0;
+    width: 60%;
+    text-align: center;
+}
+
+#form {
+    position: relative;
+}
+
+/*.name-email {*/
+/*    width: 750px;*/
+/*    margin-bottom: 2rem;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+#message {
+    display: block;
+    width: 750px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border: rgba(255, 255, 255, 0.1) 2px solid;
+    margin: 0.7rem 0;
+    border-radius: 2%;
+}
+
+/* Booking */
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+.booking hr {
+    margin: 1rem 0;
+    color: rgba(94, 94, 94, 0.7);
+    width: 300px;
+}
+
+.book-now {
+    width: 150px;
+    height: 75px;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+    padding: 0.8rem;
+    background: var(--black-color);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s ease;
+}
+
+.book-now:hover {
+    color: var(--black-color);
+    background: #f1f1f1;
+}
+
+#phone-icon i {
+    color: #f1f1f1;
+    margin-right: 0.4rem;
+    font-size: 1rem;
+}
+
+#submit {
+    width: 250px;
+}
+
+@media (max-width: 900px) {
+
+    .contact-us-flex {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .booking {
+        position: absolute;
+        left: -22%;
+        top: 8%;
+    }
+
+    .form-container {
+        position: absolute;
+        top : 35%;
+        left: -50%;
+    }
+
+    #form input:not(#message) {
+        width: 70vw;
+    }
+
+    #message {
+        width: 70vw;
+    }
+
+    .contact-us-image img,
+    .contact-us-image {
+        height: 50vh;
+    }
+
+    #submit {
+        margin-top: 1rem;
+    }
+
+}

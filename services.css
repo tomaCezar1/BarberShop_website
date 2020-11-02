@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.services-header {
+    position: static;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.services-div h1 {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.services-div h1:not(.title-haircuts) span {
+    border-bottom: solid 3px rgba(226, 226, 226, 1);
+}
+
+.services-blocks h1:first-child {
+    color: #000000;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Fjallah One', sans-serif;
+    letter-spacing: 0;
+}
+
+.services-div h1:nth-child(2) {
+    margin-top: 0;
+}
+
+.services-div p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.right {
+    float: right;
+    display: inline;
+    width: 15%;
+}
+
+.separator-hr {
+    width: 90%;
+    margin-top: 3.5rem;
+    border: 1px solid rgba(226, 226, 226, 1)
+}
+
+.separator-hr-bottom {
+    width: 80%;
+    margin: 3.5rem auto auto auto;
+    border: 1px solid rgba(226, 226, 226, 1)
+}
+
+.footer {
+    background: #000000;
+    height: 12vh;
+}
+
+footer .footer-menu-black {
+    padding-bottom: 0;
+}
+
+.menu-item {
+    color: #f1f1f1;
+}
+
+@media (max-width: 900px) {
+
+    .footer {
+        height: 30vh;
+    }
+}

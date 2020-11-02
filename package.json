@@ -1,0 +1,24 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d barbershop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaCezar1/Barbershop_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomaCezar1/Barbershop_website/issues"
+  },
+  "homepage": "https://github.com/tomaCezar1/Barbershop_website"
+}

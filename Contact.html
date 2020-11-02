@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contact_us.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="barbershop-logo.jpg" alt="">
+        <nav class="nav-bar">
+            <ul>
+                <li class="nav-bar-li"><a href="index.html" class="nav-items">Home</a></li>
+                <li class="nav-bar-li"><a href="About_us.html" class="nav-items">About us</a></li>
+                <li class="nav-bar-li"><a href="Contact.html" class="nav-items active">Contact</a></li>
+                <li class="nav-bar-li"><a href="services.html" class="nav-items">Services</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="#" class="icon-btn"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-btn"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+
+    <div class="contact-us-image">
+        <img src="pexels-nancy-bourque-2244823.jpg" alt="">
+    </div>
+
+    <section class="contact-us-flex">
+        <div class="booking">
+            <h1 id="phone-icon"><i class="fas fa-phone"></i>(514)-587-9912</h1>
+            <hr>
+            <h1>Book an appointment</h1>
+            <hr>
+            <button class="book-now">Book Now</button>
+        </div>
+
+        <div class="form-container">
+            <form action="" id="form">
+                <div class="name-email">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter Your Name" required>
+
+                    <label for="email">Your E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="Enter Your Email" required>
+                </div>
+
+                <label for="message">Your Message</label>
+                <textarea name="message" rows="1" cols="50" id="message" required></textarea>
+                <a href="#" id="submit">Send Message</a>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const form = document.querySelector('#form');
+        const input = document.querySelectorAll('input');
+        const textArea = document.querySelector('textarea');
+
+        form.addEventListener('click', (e) => {
+            const target = e.target;
+            if(target.matches('input') || target.matches('textarea')) {
+                target.classList.add('active-input');
+            }
+        });
+
+        form.addEventListener('mouseout', () => {
+            textArea.classList.remove('active-input');
+            input.forEach((input) => {
+                input.classList.remove('active-input');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="about_us.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>About us</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1><i class="fas fa-bars"></i>Menu</h1>
+        </div>
+        <nav class="side-bar">
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <ul class="side-bar-ul">
+                <li><a href="index.html" class="nav2-items">Home</a></li>
+                <li><a href="About_us.html" class="nav2-items active">About us</a></li>
+                <li><a href="Contact.html" class="nav2-items">Contact</a></li>
+                <li><a href="services.html" class="nav2-items">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="showcase">
+        <div class="video-container">
+            <video src="crb-landing-video-1.mp4" autoplay muted loop></video>
+        </div>
+            <div class="text-container">
+                <h1>La Section</h1>
+                <p class="desktop-text">The most important part of a barbershop is its atmosphere and vibe. The moment you step through
+                    La Section doors you disconnect with the outside world and immediately feel the good
+                    vibes surrounding the shop. </p>
+                <p class="mobile-text">La Section doors you disconnect with the outside world and immediately feel the good
+                    vibes surrounding the shop.</p>
+            </div>
+    </section>
+    <script>
+        const navBar = document.querySelector('.side-bar');
+        const iconBars = document.querySelector('.fa-bars');
+        const menu = document.querySelector('.menu');
+        const closeBtn = document.querySelector('.close-btn');
+        const textContainer = document.querySelector('.text-container');
+
+        iconBars.addEventListener('click', openNavBar);
+
+        function openNavBar() {
+            navBar.style.opacity = '1';
+            navBar.style.zIndex = '2';
+            navBar.style.width = '270px';
+            menu.style.opacity = '0';
+            textContainer.style.zIndex = '0';
+            textContainer.style.opacity = '0.4';
+        }
+
+        closeBtn.addEventListener('click', closeNavBar);
+
+        function closeNavBar() {
+            navBar.style.opacity = '0';
+            navBar.style.width = '0';
+            navBar.style.zIndex = '-1';
+            menu.style.opacity = '1';
+            textContainer.style.zIndex = '2';
+            textContainer.style.opacity = '0.85';
+        }
+
+        navBar.addEventListener('blur', closeNavBar);
+    </script>
+</body>
+</html>
